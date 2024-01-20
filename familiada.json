@@ -1,0 +1,62 @@
+[
+    {
+          "question":"Question 1",
+        "answears":[{"ans":"Answer 1","points":30},
+                    {"ans":"Answers 2","points":10},
+                    {"ans":"Answers 3","points":10},
+                    {"ans":"Answers 4","points":10},
+                    {"ans":"Answers 5","points":10},
+                    {"ans":"Answers 6","points":10}, 
+                    {"ans":"Answers 7","points":10}, 
+                    {"ans":"Answers 8","points":10}]
+    },
+    {
+        "question":"Question 2",
+        "answears":[{"ans":"Answer 1","points":30},
+                    {"ans":"Answers 2","points":20},
+                    {"ans":"Answers 3","points":10},
+                    {"ans":"Answers 4","points":10},
+                    {"ans":"Answers 5","points":10},
+                    {"ans":"Answers 6","points":10}, 
+                    {"ans":"Answers 7","points":10}]
+    },
+    {
+        "question":"Question 3",
+        "answears":[{"ans":"Answer 1","points":30},
+                    {"ans":"Answers 2","points":20},
+                    {"ans":"Answers 3","points":20},
+                    {"ans":"Answers 4","points":10},
+                    {"ans":"Answers 5","points":10},
+                    {"ans":"Answers 6","points":10}]
+    },
+    {
+        "question":"Question 4",
+      "  answears":[{"ans":"Answer 1","points":20},
+                    {"ans":"Answers 2","points":20},
+                    {"ans":"Answers 3","points":20},
+                    {"ans":"Answers 4","points":20},
+                    {"ans":"Answers 5","points":20}]
+    },
+    {
+        "question":"Question 5",
+        "answears":[{"ans":"Answer 1","points":25},
+                    {"ans":"Answers 2","points":25},
+                    {"ans":"Answers 3","points":25},
+                    {"ans":"Answers 4","points":25}]
+    },
+    {
+        "question":"Question 6",
+        "answears":[{"ans":"Answer 1","points":40},
+                    {"ans":"Answers 2","points":30},
+                    {"ans":"Answers 3","points":30}]
+    },
+    {
+        "question":"Question 7",
+        "answears":[{"ans":"Answer 1","points":50},
+                    {"ans":"Answers 2","points":50}]
+    },
+    {
+        "question":"Question 8",
+        "answears":[{"ans":"Answer 1","points":100}]
+    }
+]

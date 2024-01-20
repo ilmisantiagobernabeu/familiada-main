@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Familiada</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+
+<body>
+    <script src="https://unpkg.com/vue@3"></script>
+    <div id="app" class="main">
+        <div class="screen-bg">
+            <div class="top-score">
+                <input class="score" v-model="scores.topScore">
+            </div>
+            <div class="left-score team-score">
+                <input class="score" v-model="scores.leftScore">
+            </div>
+            <div id="screen" class="screen">
+                <div class="board-answers">
+                    <div v-for="(answear, index) in activeAnswers" class="board-response-row">
+                        <p class="number">{{ index + 1 }}</p>
+                        <p class="answer">{{ answear.display ? answear.ans : ". ".repeat(12) }}</p>
+                        <p class="points">{{ answear.display ? answear.points : "---"  }}</p>
+                    </div>
+                </div>
+                <div class="wrong-answers-col">
+                    <img v-for="i in xs"
+                    src="assets/X-alpha.PNG" class="wrong-answer"></img>
+                </div>
+                <div class="sum">
+                    <p class="sum-text">SCORE: {{ activeAnswers.map(a => a.display ? a.points : 0).reduce((a,b)=>a+b) }}</p>
+                </div>    
+            </div>
+            <div class="right-score team-score">
+                <input class="score" v-model="scores.rightScore">
+            </div>
+        </div>
+    </div>
+
+    <script src='script.js'></script>
+</body>
+
+</html>

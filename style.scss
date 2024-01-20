@@ -1,0 +1,156 @@
+@font-face {
+  font-family: "Familiada";
+  src: url("assets/Familiada.woff2") format("woff2"), url("assets/Familiada.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-image: url("assets/familiada-studio.jpg");
+  background-position-x: center;
+  background-size: 100%;
+  animation: bgMove 30s infinite;
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .screen-bg {
+      width: 1365px;
+      height: 738px;
+      transform: scale(1.1);
+
+      background-image: url("assets/board.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      position: relative;
+
+      font-family: Familiada;
+      color: rgb(175, 218, 112);
+
+      .score {
+          background-color: transparent;
+          font: inherit;
+          font-style: inherit;
+          color: inherit;
+          font-size: 70px;
+          border: none;
+          width: 200px;
+          letter-spacing: 10px;
+      }
+
+      .top-score {
+          position: absolute;
+          left: 590px;
+          top: 45px;
+          font-size: 62px;
+          color: rgb(161, 222, 70);
+      }
+
+      .team-score {
+          position: absolute;
+          top: 355px;
+          font-size: 60px;
+          letter-spacing: 20px;
+      }
+
+      .left-score {
+          left: 12px;
+          top: 345px;
+      }
+
+      .right-score {
+          right: -15px;
+      }
+
+      .screen {
+          top: 190px;
+          left: 346px;
+          width: 681px;
+          height: 361px;
+          position: relative;
+          font-size: 25px;
+
+
+          .board-answers {
+              position: relative;
+              width: fit-content;
+              top: 73px;
+              left: 93px;
+              display: inline;
+              .board-response-row {
+                  height: 37px;
+                  width: 500px;
+                  display: flex;
+
+                  &:hover {
+                      color: rgb(51, 245, 255);
+                  }
+
+                  .number,
+                  .answer,
+                  .points {
+                      letter-spacing: 3.7px;
+                  }
+                  .answer {
+                      width: 362px;
+                      margin-left: 24px;
+                  }
+                  .points {
+                  }
+              }
+          }
+
+          .wrong-answers-col {
+              width: 66px;
+
+              position: absolute;
+              right: 22px;
+              top: 23px;
+
+              .wrong-answer {
+                  margin-top: 19px;
+              }
+          }
+
+          .sum {
+              position: absolute;
+              bottom: 73px;
+              right: 159px;
+
+          }
+      }
+
+  }
+}
+
+@keyframes bgMove {
+  0% {background-size: 100%;}
+  50% {
+      background-size: 135%;
+      background-position-y: -60px;
+  }
+  100% {background-size: 100%;}
+}
